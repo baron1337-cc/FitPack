@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Как начать силовые тренировки с нуля — FitPack</title>
+    <meta name="description" content="Как начать силовые тренировки новичку: базовые упражнения, занятия дома и в зале, программы на неделю, подходы, повторения и восстановление.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#20a56b">
+
+    <!-- Путь рассчитан на размещение файла в папке /articles/ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Стили этой статьи. Основные цвета согласованы с зелёной палитрой FitPack. -->
+    <style>
+        :root {
+            /* Используем палитру основного style.css FitPack */
+            --fp-green: var(--accent, #20a56b);
+            --fp-green-dark: var(--accent, #20a56b);
+            --fp-green-light: #eaf6ee;
+            --fp-text: var(--text, #15171a);
+            --fp-muted: var(--muted, #69717d);
+            --fp-border: var(--border, #e7e9ed);
+            --fp-surface: var(--bg, #f6f7f9);
+        }
+
+        .fp-article-page {
+            color: var(--fp-text);
+            line-height: 1.7;
+        }
+
+        .fp-article-page *,
+        .fp-article-page *::before,
+        .fp-article-page *::after {
+            box-sizing: border-box;
+        }
+
+        .fp-article {
+            width: min(100% - 32px, 900px);
+            margin: 0 auto;
+            padding: 32px 0 72px;
+        }
+
+        .fp-article-hero {
+            margin-bottom: 32px;
+        }
+
+        .fp-article-kicker {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: var(--fp-green-dark);
+            font-size: .82rem;
+            font-weight: 800;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .fp-article h1 {
+            margin: 0 0 16px;
+            font-size: clamp(2rem, 5vw, 3.25rem);
+            line-height: 1.12;
+            letter-spacing: -.035em;
+        }
+
+        .fp-article-lead {
+            max-width: 760px;
+            margin: 0 0 22px;
+            color: var(--fp-muted);
+            font-size: 1.12rem;
+        }
+
+        .fp-article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 18px;
+            margin-bottom: 22px;
+            color: var(--fp-muted);
+            font-size: .9rem;
+        }
+
+        .fp-article-meta span::before {
+            content: "•";
+            margin-right: 8px;
+            color: var(--fp-green);
+        }
+
+        .fp-article-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 18px;
+            background: var(--fp-green-light);
+        }
+
+        .fp-image-caption {
+            margin: 8px 2px 0;
+            color: var(--fp-muted);
+            font-size: .82rem;
+        }
+
+        .fp-image-placeholder {
+            display: grid;
+            min-height: 190px;
+            place-items: center;
+            padding: 20px;
+            border: 2px dashed #a9cdb5;
+            border-radius: 16px;
+            background: var(--fp-green-light);
+            color: var(--fp-green-dark);
+            text-align: center;
+        }
+
+        .fp-image-placeholder strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .fp-toc {
+            margin: 30px 0 38px;
+            padding: 22px 24px;
+            border: 1px solid var(--fp-border);
+            border-left: 5px solid var(--fp-green);
+            border-radius: 14px;
+            background: var(--fp-surface);
+        }
+
+        .fp-toc h2 {
+            margin: 0 0 12px;
+            font-size: 1.2rem;
+        }
+
+        .fp-toc ol {
+            margin: 0;
+            padding-left: 22px;
+        }
+
+        .fp-toc li {
+            margin: 5px 0;
+        }
+
+        .fp-article-page a {
+            color: var(--fp-green-dark);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        .fp-article-page a:hover {
+            color: var(--fp-green);
+        }
+
+        .fp-article-section {
+            margin: 0 0 38px;
+            scroll-margin-top: 24px;
+        }
+
+        .fp-article-section h2 {
+            margin: 0 0 16px;
+            font-size: clamp(1.45rem, 3vw, 1.9rem);
+            line-height: 1.25;
+        }
+
+        .fp-article-section h3 {
+            margin: 24px 0 10px;
+            font-size: 1.2rem;
+            line-height: 1.35;
+        }
+
+        .fp-article-section p {
+            margin: 0 0 14px;
+        }
+
+        .fp-article-section ul,
+        .fp-article-section ol {
+            padding-left: 24px;
+        }
+
+        .fp-article-section li {
+            margin: 7px 0;
+        }
+
+        .fp-callout {
+            margin: 22px 0;
+            padding: 18px 20px;
+            border: 1px solid #cfe6d5;
+            border-radius: 14px;
+            background: var(--fp-green-light);
+        }
+
+        .fp-callout strong {
+            color: var(--fp-green-dark);
+        }
+
+        .fp-comparison,
+        .fp-workout-table {
+            width: 100%;
+            margin: 18px 0 22px;
+            border-collapse: collapse;
+            border: 1px solid var(--fp-border);
+            border-radius: 12px;
+            overflow: hidden;
+            font-size: .96rem;
+        }
+
+        .fp-comparison th,
+        .fp-comparison td,
+        .fp-workout-table th,
+        .fp-workout-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--fp-border);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .fp-comparison thead th,
+        .fp-workout-table thead th {
+            background: var(--fp-green-light);
+            color: var(--fp-green-dark);
+            font-weight: 800;
+        }
+
+        .fp-comparison tbody tr:last-child td,
+        .fp-workout-table tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .fp-workout-card {
+            margin: 22px 0;
+            padding: 20px;
+            border: 1px solid var(--fp-border);
+            border-radius: 16px;
+            background: #fff;
+        }
+
+        .fp-workout-card h3 {
+            margin-top: 0;
+        }
+
+        .fp-faq details {
+            margin: 10px 0;
+            padding: 15px 18px;
+            border: 1px solid var(--fp-border);
+            border-radius: 12px;
+            background: var(--card, #fff);
+        }
+
+        .fp-faq summary {
+            color: var(--fp-text);
+            cursor: pointer;
+            font-weight: 750;
+        }
+
+        .fp-faq details p {
+            margin: 12px 0 0;
+            color: var(--fp-muted);
+        }
+
+        .fp-article-footer {
+            margin-top: 42px;
+            padding: 24px;
+            border-radius: 16px;
+            background: var(--fp-green-light);
+            text-align: center;
+        }
+
+        .fp-article-footer strong {
+            color: var(--fp-green-dark);
+        }
+
+        .fp-back-to-top {
+            display: inline-block;
+            margin-top: 24px;
+            font-size: .92rem;
+            font-weight: 700;
+        }
+
+        @media (max-width: 640px) {
+            .fp-article {
+                width: min(100% - 24px, 900px);
+                padding-top: 22px;
+            }
+
+            .fp-article-lead {
+                font-size: 1rem;
+            }
+
+            .fp-toc {
+                padding: 18px;
+            }
+
+            .fp-comparison,
+            .fp-workout-table {
+                font-size: .88rem;
+            }
+
+            .fp-comparison th,
+            .fp-comparison td,
+            .fp-workout-table th,
+            .fp-workout-table td {
+                padding: 9px 8px;
+            }
+
+            .fp-workout-card {
+                padding: 15px;
+            }
+        }
+    </style>
+
+    <!-- Разметка статьи для поисковых систем -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Как начать силовые тренировки: руководство для начинающих",
+      "description": "Практическое руководство для новичков: упражнения, тренировки дома и в зале, программа на неделю и восстановление.",
+      "inLanguage": "ru",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FitPack"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <div class="fp-article-page">
+        <main class="article-page fp-article" id="top">
+            <article>
+                <header class="fp-article-hero">
+                    <span class="fp-article-kicker">FitPack · Тренировки</span>
+                    <h1>Как начать силовые тренировки</h1>
+                    <p class="fp-article-lead">
+                        Практическое руководство для начинающих: как выбрать упражнения,
+                        заниматься дома или в зале и составить первую программу тренировок.
+                    </p>
+                    <div class="fp-article-meta">
+                        <span>Для начинающих</span>
+                        <span>5–7 минут чтения</span>
+                    </div>
+
+                    <!-- ИЗОБРАЖЕНИЕ 1: обложка статьи.
+                         Замените путь ../images/articles/strength-training-cover.webp
+                         на фактический путь к вашему изображению. -->
+                    <img
+                        class="fp-article-image"
+                        src="../images/articles/strength-training-cover.webp"
+                        alt="Мужчина и женщина выполняют силовые упражнения в тренажёрном зале"
+                        width="1200"
+                        height="675"
+                        fetchpriority="high"
+                    >
+                </header>
+
+                <nav class="fp-toc" aria-label="Содержание статьи">
+                    <h2>Содержание</h2>
+                    <ol>
+                        <li><a href="#benefits">Зачем нужны силовые тренировки</a></li>
+                        <li><a href="#start">С чего начать новичку</a></li>
+                        <li><a href="#where">Дом или тренажёрный зал</a></li>
+                        <li><a href="#exercises">Основные упражнения</a></li>
+                        <li><a href="#frequency">Как часто тренироваться</a></li>
+                        <li><a href="#progress">Как увеличивать нагрузку</a></li>
+                        <li><a href="#program">Программа на первую неделю</a></li>
+                        <li><a href="#mistakes">Пять ошибок начинающих</a></li>
+                        <li><a href="#recovery">Питание и восстановление</a></li>
+                        <li><a href="#faq">Часто задаваемые вопросы</a></li>
+                    </ol>
+                </nav>
+
+                <p>
+                    Силовые тренировки — один из наиболее эффективных способов укрепить мышцы,
+                    развить силу и улучшить физическую форму. Они подходят как мужчинам, так и
+                    женщинам, независимо от того, хотите ли вы похудеть, сделать тело более
+                    подтянутым или просто стать выносливее.
+                </p>
+                <p>
+                    Начинать заниматься можно дома или в тренажёрном зале. Для первых результатов
+                    необязательно покупать дорогое оборудование или проводить часы на тренировках.
+                    Главное — правильно подобрать упражнения, освоить технику и постепенно
+                    увеличивать нагрузку.
+                </p>
+                <p>
+                    В этом руководстве FitPack разберём, как начать силовые тренировки с нуля
+                    и составить свою первую программу.
+                </p>
+
+                <section class="fp-article-section" id="benefits">
+                    <h2>1. Зачем нужны силовые тренировки?</h2>
+                    <p>
+                        Силовые упражнения помогают не только развивать мышцы. Регулярные занятия
+                        положительно влияют на общее физическое состояние.
+                    </p>
+                    <ul>
+                        <li><strong>Развитие мышц.</strong> Постепенная нагрузка помогает укреплять и увеличивать мышечную массу.</li>
+                        <li><strong>Укрепление костей.</strong> Силовая работа создаёт полезную нагрузку на костную ткань.</li>
+                        <li><strong>Контроль веса.</strong> Сохранение и развитие мышц особенно важно во время похудения.</li>
+                        <li><strong>Улучшение физической формы.</strong> Повышается сила и способность выполнять повседневные задачи.</li>
+                        <li><strong>Поддержание здоровья.</strong> Регулярные силовые занятия помогают улучшать физическую работоспособность.</li>
+                    </ul>
+                    <p>
+                        Силовые тренировки подходят людям с разными целями. Главное —
+                        адаптировать программу под собственный уровень подготовки.
+                    </p>
+                </section>
+
+                <section class="fp-article-section" id="start">
+                    <h2>2. С чего начать новичку?</h2>
+                    <p>Перед первой тренировкой определите свою основную цель:</p>
+                    <ul>
+                        <li>Похудение и сохранение мышечной массы.</li>
+                        <li>Развитие мышц и увеличение силы.</li>
+                        <li>Улучшение тонуса и общей физической формы.</li>
+                        <li>Повышение выносливости.</li>
+                    </ul>
+                    <p>
+                        Для начала не нужно составлять сложную программу. Лучше выбрать несколько
+                        упражнений, которые задействуют основные группы мышц.
+                    </p>
+                    <p>Новичку стоит придерживаться трёх принципов:</p>
+                    <ol>
+                        <li>Начинать с небольшого количества упражнений.</li>
+                        <li>Использовать комфортную нагрузку и контролировать технику.</li>
+                        <li>Увеличивать сложность постепенно, не пытаясь добиться максимальных результатов за первую неделю.</li>
+                    </ol>
+                    <div class="fp-callout">
+                        <strong>Важно:</strong> если есть хронические заболевания, ограничения
+                        по физической активности или боль при движении, программу следует
+                        предварительно согласовать с медицинским специалистом.
+                    </div>
+                </section>
+
+                <section class="fp-article-section" id="where">
+                    <h2>3. Где лучше тренироваться: дома или в зале?</h2>
+                    <p>
+                        Оба варианта подходят для начинающих. Выбор зависит от доступного
+                        оборудования, бюджета и личных предпочтений.
+                    </p>
+
+                    <!-- ИЗОБРАЖЕНИЕ 2: домашние тренировки.
+                         Замените путь ../images/articles/home-strength-training.webp -->
+                    <img
+                        class="fp-article-image"
+                        src="../images/articles/home-strength-training.webp"
+                        alt="Пример силовой тренировки дома с упражнениями с собственным весом"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                    >
+
+                    <h3>Домашние тренировки</h3>
+                    <p><strong>Преимущества:</strong></p>
+                    <ul>
+                        <li>Не нужно тратить деньги на абонемент.</li>
+                        <li>Можно заниматься в удобное время.</li>
+                        <li>Для начала достаточно собственного веса.</li>
+                        <li>Не нужно добираться до спортивного зала.</li>
+                    </ul>
+                    <p><strong>Недостатки:</strong></p>
+                    <ul>
+                        <li>Ограниченный выбор упражнений.</li>
+                        <li>Сложнее увеличивать нагрузку без дополнительного оборудования.</li>
+                        <li>Не всегда есть возможность получить помощь с техникой.</li>
+                    </ul>
+
+                    <!-- ИЗОБРАЖЕНИЕ 3: тренировки в зале.
+                         Замените путь ../images/articles/gym-strength-training.webp -->
+                    <img
+                        class="fp-article-image"
+                        src="../images/articles/gym-strength-training.webp"
+                        alt="Силовая тренировка с оборудованием в тренажёрном зале"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                    >
+
+                    <h3>Тренировки в тренажёрном зале</h3>
+                    <p><strong>Преимущества:</strong></p>
+                    <ul>
+                        <li>Большой выбор тренажёров и свободных весов.</li>
+                        <li>Удобнее постепенно увеличивать сопротивление.</li>
+                        <li>Можно разнообразить тренировочную программу.</li>
+                    </ul>
+                    <p><strong>Недостатки:</strong></p>
+                    <ul>
+                        <li>Необходимы финансовые затраты.</li>
+                        <li>Нужно время на дорогу.</li>
+                        <li>Новичку может потребоваться время, чтобы освоиться с оборудованием.</li>
+                    </ul>
+
+                    <div class="fp-callout">
+                        <strong>Что выбрать?</strong> Если вы никогда раньше не тренировались,
+                        можно спокойно начинать дома. Тренажёрный зал не является обязательным
+                        условием для развития силы и мышц.
+                    </div>
+                </section>
+
+                <section class="fp-article-section" id="exercises">
+                    <h2>4. Основные упражнения для начинающих</h2>
+                    <p>
+                        В первой программе желательно использовать движения, которые задействуют
+                        несколько мышечных групп.
+                    </p>
+
+                    <!-- ИЗОБРАЖЕНИЕ 4: инфографика с базовыми упражнениями.
+                         Замените путь ../images/articles/strength-exercises-guide.webp -->
+                    <img
+                        class="fp-article-image"
+                        src="../images/articles/strength-exercises-guide.webp"
+                        alt="Инфографика с базовыми силовыми упражнениями для начинающих"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                    >
+
+                    <ol>
+                        <li>
+                            <strong>Приседания.</strong> Развивают мышцы ног и ягодиц.
+                            Следите за устойчивым положением стоп и контролируйте движение вниз.
+                        </li>
+                        <li>
+                            <strong>Отжимания.</strong> Развивают мышцы груди, плеч и рук.
+                            Если обычные отжимания пока сложны, начните с отжиманий от стены
+                            или устойчивой опоры.
+                        </li>
+                        <li>
+                            <strong>Ягодичный мостик.</strong> Укрепляет ягодичные мышцы и
+                            заднюю поверхность тела. Не нужно чрезмерно прогибаться в пояснице.
+                        </li>
+                        <li>
+                            <strong>Тяга.</strong> Помогает развивать мышцы спины. Дома можно
+                            использовать резиновую ленту или подходящий рюкзак с небольшим весом,
+                            а в зале — тягу верхнего блока.
+                        </li>
+                        <li>
+                            <strong>Выпады.</strong> Развивают мышцы ног и помогают улучшать
+                            координацию. Начинайте с небольшой амплитуды и при необходимости
+                            используйте опору.
+                        </li>
+                        <li>
+                            <strong>Планка.</strong> Упражнение для мышц корпуса. Сохраняйте
+                            естественное положение позвоночника и не задерживайте дыхание.
+                        </li>
+                    </ol>
+                    <p>
+                        Необязательно выполнять все упражнения на каждой тренировке.
+                        Выбирайте подходящие движения и постепенно осваивайте их технику.
+                    </p>
+                </section>
+
+                <section class="fp-article-section" id="frequency">
+                    <h2>5. Как часто нужно тренироваться?</h2>
+                    <p>
+                        Для начинающего хорошим стартом будут три силовые тренировки в неделю
+                        с перерывом между занятиями.
+                    </p>
+                    <ul>
+                        <li>Понедельник — тренировка.</li>
+                        <li>Вторник — отдых.</li>
+                        <li>Среда — тренировка.</li>
+                        <li>Четверг — отдых.</li>
+                        <li>Пятница — тренировка.</li>
+                        <li>Суббота и воскресенье — восстановление или лёгкая активность.</li>
+                    </ul>
+                    <p>
+                        Продолжительность одного занятия на старте может составлять 25–45 минут.
+                        Не стоит пытаться тренироваться ежедневно. Мышцам и другим системам
+                        организма необходимо время для восстановления.
+                    </p>
+                </section>
+
+                <section class="fp-article-section" id="progress">
+                    <h2>6. Как правильно увеличивать нагрузку?</h2>
+                    <p>
+                        Одна из главных ошибок новичков — попытка сразу использовать тяжёлые
+                        веса или выполнять слишком много повторений.
+                    </p>
+                    <p>
+                        Начните с 1–2 рабочих подходов каждого упражнения. Для большинства
+                        упражнений можно ориентироваться на 8–12 повторений, а для планки —
+                        на 15–30 секунд.
+                    </p>
+                    <p>Когда вы научитесь уверенно выполнять упражнение с правильной техникой, можно постепенно усложнять тренировку:</p>
+                    <ul>
+                        <li>Добавлять повторения.</li>
+                        <li>Увеличивать количество подходов.</li>
+                        <li>Использовать немного больший вес.</li>
+                        <li>Переходить к более сложному варианту упражнения.</li>
+                    </ul>
+                    <div class="fp-callout">
+                        <strong>Правило прогресса:</strong> увеличивайте только один параметр
+                        за раз. Не нужно повышать нагрузку на каждой тренировке. Последние
+                        повторения должны требовать усилий, но техника движения должна
+                        оставаться контролируемой.
+                    </div>
+                </section>
+
+                <section class="fp-article-section" id="program">
+                    <h2>7. Программа тренировок на первую неделю</h2>
+                    <p>
+                        Ниже представлены два варианта программы. Выберите один в зависимости
+                        от того, где планируете заниматься.
+                    </p>
+
+                    <div class="fp-workout-card">
+                        <h3>Вариант №1. Домашняя тренировка</h3>
+                        <p>
+                            Выполняйте комплекс три раза в неделю, оставляя день отдыха
+                            между занятиями.
+                        </p>
+                        <table class="fp-workout-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Упражнение</th>
+                                    <th scope="col">Подходы</th>
+                                    <th scope="col">Повторения</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Приседания</td><td>2</td><td>10–12</td></tr>
+                                <tr><td>Отжимания от опоры</td><td>2</td><td>8–12</td></tr>
+                                <tr><td>Ягодичный мостик</td><td>2</td><td>12–15</td></tr>
+                                <tr><td>Выпады с опорой</td><td>2</td><td>8 на каждую ногу</td></tr>
+                                <tr><td>Планка</td><td>2</td><td>15–30 секунд</td></tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            При необходимости отдыхайте между подходами 60–120 секунд.
+                            Если обычные отжимания пока сложны, используйте более лёгкий вариант.
+                        </p>
+                    </div>
+
+                    <div class="fp-workout-card">
+                        <h3>Вариант №2. Тренировка в тренажёрном зале</h3>
+                        <p>
+                            Также выполняйте комплекс три раза в неделю с перерывом
+                            между занятиями.
+                        </p>
+                        <table class="fp-workout-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Упражнение</th>
+                                    <th scope="col">Подходы</th>
+                                    <th scope="col">Повторения</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Жим ногами</td><td>2</td><td>10–12</td></tr>
+                                <tr><td>Тяга верхнего блока</td><td>2</td><td>10–12</td></tr>
+                                <tr><td>Жим гантелей лёжа</td><td>2</td><td>10–12</td></tr>
+                                <tr><td>Румынская тяга с гантелями</td><td>2</td><td>10</td></tr>
+                                <tr><td>Планка</td><td>2</td><td>20–30 секунд</td></tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            Начинайте с небольшого веса. При необходимости попросите инструктора
+                            показать настройку тренажёров и технику упражнений.
+                        </p>
+                    </div>
+
+                    <!-- ИЗОБРАЖЕНИЕ 5: инфографика недельного плана.
+                         Замените путь ../images/articles/beginner-workout-plan.webp -->
+                    <img
+                        class="fp-article-image"
+                        src="../images/articles/beginner-workout-plan.webp"
+                        alt="Недельный план силовых тренировок для начинающих"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                    >
+
+                    <div class="fp-callout">
+                        <strong>Важно:</strong> указанные программы — стартовые примеры.
+                        Подбирайте нагрузку с учётом своей физической подготовки и самочувствия.
+                        Перед силовой частью занятия уделите несколько минут лёгкой разминке.
+                    </div>
+                </section>
+
+                <section class="fp-article-section" id="mistakes">
+                    <h2>8. Пять ошибок начинающих</h2>
+                    <ol>
+                        <li>
+                            <strong>Слишком высокая нагрузка.</strong>
+                            Не пытайтесь повторять программы опытных спортсменов.
+                            Начинайте с доступного уровня.
+                        </li>
+                        <li>
+                            <strong>Игнорирование техники.</strong>
+                            Количество повторений не важнее правильного выполнения упражнения.
+                        </li>
+                        <li>
+                            <strong>Отсутствие отдыха.</strong>
+                            Постоянные интенсивные тренировки без восстановления могут ухудшать результаты.
+                        </li>
+                        <li>
+                            <strong>Ожидание быстрых результатов.</strong>
+                            Сила и мышечная масса развиваются постепенно. Регулярность важнее
+                            кратковременного энтузиазма.
+                        </li>
+                        <li>
+                            <strong>Отсутствие системы.</strong>
+                            Хаотичные занятия затрудняют отслеживание прогресса.
+                            Записывайте упражнения, повторения и рабочие веса.
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="fp-article-section" id="recovery">
+                    <h2>9. Питание и восстановление</h2>
+                    <p>
+                        Для развития мышц недостаточно только тренироваться. Организму нужны
+                        энергия, полноценное питание и отдых.
+                    </p>
+
+                    <!-- ИЗОБРАЖЕНИЕ 6: восстановление после тренировки.
+                         Замените путь ../images/articles/strength-training-recovery.webp -->
+                    <img
+                        class="fp-article-image"
+                        src="../images/articles/strength-training-recovery.webp"
+                        alt="Спортсмен выполняет лёгкую растяжку после силовой тренировки"
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                    >
+
+                    <ul>
+                        <li>
+                            <strong>Белок.</strong> Яйца, курица, рыба, молочные продукты и
+                            бобовые помогают обеспечивать организм строительным материалом для мышц.
+                        </li>
+                        <li>
+                            <strong>Энергия.</strong> Не стоит чрезмерно ограничивать калорийность
+                            питания, особенно при регулярных силовых нагрузках.
+                        </li>
+                        <li>
+                            <strong>Сон.</strong> Старайтесь спать 7–9 часов в сутки и соблюдать
+                            регулярный режим.
+                        </li>
+                    </ul>
+                    <p>
+                        Если ваша цель — похудение, умеренный дефицит калорий в сочетании
+                        с силовыми тренировками поможет снижать жировую массу и лучше сохранять мышцы.
+                    </p>
+                </section>
+
+                <section class="fp-article-section fp-faq" id="faq">
+                    <h2>Часто задаваемые вопросы</h2>
+
+                    <details>
+                        <summary>Можно ли заниматься силовыми тренировками дома без оборудования?</summary>
+                        <p>
+                            Да. Приседания, отжимания от опоры, выпады, ягодичный мостик и другие
+                            упражнения с собственным весом подходят для начала занятий.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Можно ли женщинам заниматься с гантелями?</summary>
+                        <p>
+                            Да. Силовые упражнения подходят и мужчинам, и женщинам.
+                            Нагрузку нужно подбирать индивидуально.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Через сколько появятся первые результаты?</summary>
+                        <p>
+                            Улучшение координации и освоение упражнений могут происходить уже
+                            в первые недели. Изменения мышечной массы и внешнего вида требуют
+                            больше времени и регулярных занятий.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Нужно ли тренироваться до отказа?</summary>
+                        <p>
+                            Нет. Особенно на начальном этапе. Лучше заканчивать подход,
+                            пока вы ещё можете выполнить несколько повторений с правильной техникой.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Можно ли похудеть только с помощью силовых тренировок?</summary>
+                        <p>
+                            Силовые тренировки помогают сохранять мышцы и улучшать композицию тела.
+                            Для снижения жировой массы также важно питание и общая физическая активность.
+                        </p>
+                    </details>
+                </section>
+
+                <footer class="fp-article-footer">
+                    <p>
+                        Начать силовые тренировки проще, чем кажется. Необязательно сразу покупать
+                        абонемент, спортивное оборудование или составлять сложную программу.
+                    </p>
+                    <p>
+                        Выберите удобное место, освойте базовые упражнения, занимайтесь три раза
+                        в неделю и постепенно увеличивайте нагрузку.
+                    </p>
+                    <p>
+                        Не сравнивайте свои результаты с результатами других людей.
+                        Ваша главная задача — выработать привычку регулярно тренироваться
+                        и двигаться вперёд.
+                    </p>
+                    <strong>FitPack — начни с малого, тренируйся регулярно, становись сильнее!</strong>
+                </footer>
+
+                <a class="fp-back-to-top" href="#top">↑ Вернуться к началу статьи</a>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
